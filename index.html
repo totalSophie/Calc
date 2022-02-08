@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calc</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <section class="container">
         <section class="row1">
-            <div id="input_screen"></div>
+            <div id="display">0</div>
         </section>
         <section class="row2">
-            <div id="clr">CLEAR</div>
-            <div id="del">DELETE</div>
+            <div class="num_data" id="clr" data-action="clear">CLEAR</div>
+            <div class="num_data" id="del" data-action="delete">DELETE</div>
         </section>
         <section class="row3">
             <div class="num_data" id="num7">7</div>
             <div class="num_data" id="num8">8</div>
             <div class="num_data" id="num9">9</div>
-            <div class="num_data" id="opdiv">÷</div>
+            <div class="num_data" id="opdiv" data-action="divide">÷</div>
         </section>
         <section class="row4">
             <div class="num_data" id="num4">4</div>
             <div class="num_data" id="num5">5</div>
             <div class="num_data" id="num6">6</div>
-            <div class="num_data" id="opmult">x</div>
+            <div class="num_data" id="opmult"data-action="multiply">x</div>
         </section>
         <section class="row5">
-            <div class="num_data" id="num1">4</div>
-            <div class="num_data" id="num2">5</div>
-            <div class="num_data" id="num3">6</div>
-            <div class="num_data" id="opsub">-</div>
+            <div class="num_data" id="num1">1</div>
+            <div class="num_data" id="num2">2</div>
+            <div class="num_data" id="num3">3</div>
+            <div class="num_data" id="opsub" data-action="subtract">-</div>
         </section>
         <section class="row6">
-            <div class="num_data" id="numdec">.</div>
+            <div class="num_data" id="numdec" data-action="decimal">.</div>
             <div class="num_data" id="num0">0</div>
-            <div class="num_data" id="opequal">=</div>
-            <div class="num_data" id="opadd">+</div>
+            <div class="num_data" id="opequal" data-action="calculate">=</div>
+            <div class="num_data" id="opadd" data-action="add">+</div>
         </section>
     </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
